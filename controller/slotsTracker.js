@@ -49,7 +49,9 @@ const checkSlots = (response,counter) => {
         }
     })
     console.log("CHECK FILTERED DATA " + counter, slots)
-    mailNotifier(slots)
+    if(slots.length > 0){
+        mailNotifier(slots)
+    }
 }
 
 const mailNotifier = (slotsInfo) => {

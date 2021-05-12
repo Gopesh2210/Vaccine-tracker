@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     setInterval(function () {
         counter++
         slotsTracker(counter)
-    }, 500000)
+    }, 180000)
 })
 
 app.listen(port, () => {
